@@ -1,5 +1,8 @@
 # Chillr Online API Documentation
 
+## Merchant registration
+
+Merchant should register with Chillr first. Once you register with Chillr is done you will be given login access to the merchant web portal. You will be able to generate the api access key and secret.
 
 ## Initiate transaction
 
