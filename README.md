@@ -76,4 +76,5 @@ A sample success response
 | - transaction_code | 4 character transaction code |
 | - expiry_time | At what time the transaction will expire. |
 | - id | Unique id for the transaction |
+| - created_at | Transaction created time. |
 
