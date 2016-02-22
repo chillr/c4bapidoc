@@ -30,7 +30,7 @@ Initiate a new transaction through [Chillr](https://chillr.com).
 
 **JSON** format
 
-```
+```json
 {
   amount: 450,
   invoice_id: "INV#1",
@@ -48,7 +48,7 @@ Initiate a new transaction through [Chillr](https://chillr.com).
 
 A sample success response
 
-```
+```json
 {
   status: "success",
   message: "Transaction initiated",
@@ -64,3 +64,16 @@ A sample success response
   }
 }
 ```
+
+| Response key | Description |
+| -- | -- |
+| status | Status of the api response |
+| message | Message after initiating the transaction |
+| data | Contains data regarding the initiated transaction |
+| - status | status of the transaction |
+| - amount | transaction amount |
+| - transaction_id | QR code string for the transaction |
+| - transaction_code | 4 character transaction code |
+| - expiry_time | At what time the transaction will expire. |
+| - id | Unique id for the transaction |
+
