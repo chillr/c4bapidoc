@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [End Points](end_points.md)
+* [API Reference](end_points.md)
 
