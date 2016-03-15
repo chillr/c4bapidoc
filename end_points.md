@@ -41,17 +41,41 @@ This API is used to initiate a transaction through Chillr.
 ##### Sample Response
 ```json
 {
-        status: 'success',
-        message: 'Transaction initiated',
-        data: {
-          status: ‘initiated’
-          amount: 50,
-          description: “transaction initiated”,
-          transaction_id: "CHILLR:QRPAY:569f7a586368694380080000",
-          transaction_code: “QOCT”,
-          expiry_time: “2016/01/20 17:50:20",
-          id: ”569f7a586368694380080000”,
-          created_at: “2016/01/20 17:45:20"
-        }
+  status: 'success',
+  message: 'Transaction initiated',
+  data: {
+     status: 'initiated'
+     amount: 50,
+     description: "transaction initiated",
+     transaction_id: "CHILLR:QRPAY:569f7a586368694380080000",
+     transaction_code: "QOCT",
+     expiry_time: "2016/01/20 17:50:20",
+     id: "569f7a586368694380080000",
+     created_at: "2016/01/20 17:45:20"
+   }
  }
 ```
+
+##### Failure Codes
+
+If there is a failure; then there is a status code returned in the response along with the status field set to 'failure'.
+
+| Status Code | Description |
+| -- | -- |
+| 55 | A generic internal failure occurred. |
+| 50 | API Key is missing or invalid. |
+| 51 | Amount parameter is missing or is beyond limits. |
+| 59 | API Secret Key is missing. |
+| 58 | API Secret Key is not matching assigned key. |
+| 53 | Merchant is not approved to use the API yet. |
+| 54 | Merchant not found or invalid. |
+
+##### Sample Failure Response
+```json
+{ 
+   status: 'failure',
+   status_code: 55,
+   message: "We could not process your request due to a technical reasons. Sorry for the trouble."             
+}
+```
+
