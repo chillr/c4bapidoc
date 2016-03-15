@@ -96,7 +96,7 @@ This API is used to query the status of a created transaction.
 
 
 ##### Response Format
-The response has 2 fields - _status_ and _data_ as a JSON. The _data_ is a Base64 encrypted JSON block which needs to be decrypted in order to reveal the actual status response. Please see Response Decryption for details on how to decrypt.
+The response has 2 fields - _status_ and _data_ as a JSON. The _data_ is a Base64 encrypted JSON block which needs to be decrypted in order to reveal the actual status response. Please see [Encryption Schemes](encryption_schemes.md) for details on how to decrypt.
 
 
 ##### Response Fields
