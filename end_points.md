@@ -22,5 +22,35 @@ This API is used to initiate a transaction through Chillr.
 | extra\_param\_1 _(string)_ | For use by merchant if needed | _Null_ |
 | extra\_param\_2 _(string)_ | For use by merchant if needed | _Null_ |
 
+##### Response Fields
+
+| # | Field| Description |
+| -- | -- | -- |
+| 1 | status | Status of the API response |
+| 2 | message | Human readable description of the response |
+| 3 | data | Contains the transaction details as explained below |
+| &#149; | status | Status of the transaction |
+| &#149; | amount | Transaction Amount |
+| &#149; | transaction\_id | QR Code String for the transaction |
+| &#149; | transaction\_code | 4 character code for the transaction |
+| &#149; | expiry_time | At what time the transaction will expire |
+| &#149; | id | Unique ID of the transaction |
+| &#149; | created_at | Timestamp |
 
 
+##### Sample Response
+```json
+{
+        status: 'success',
+        message: 'Transaction initiated',
+        data: {
+          status: ‘initiated’
+          amount: 50,
+          description: “transaction initiated”,
+          transaction_id: "CHILLR:QRPAY:569f7a586368694380080000",
+          transaction_code: “QOCT”,
+          expiry_time: “2016/01/20 17:50:20",
+          id: ”569f7a586368694380080000”,
+          created_at: “2016/01/20 17:45:20"
+        }
+ }```
