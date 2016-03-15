@@ -23,6 +23,8 @@ The server will get a _qr\_code_ and an _alpha\_code_ in the response. The clien
 
 Once the user completes the transaction, status is updated on the Javascript widget. After a few seconds the widget will send a HTTP POST request to the redirect URL provided by the merchant. This request will have a JSON payload with the status and the details of the transaction in encrypted format. These details can be decrypted using the API secret key.
 
+If there is a network failure or timeout; the merchant has an option to check the status of the transaction directly from the server. 
+
 Details on the encryption scheme used is available here.
 
 
