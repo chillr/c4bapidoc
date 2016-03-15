@@ -9,6 +9,8 @@ The first step for using the payment API is to register as a Chillr for Business
 
 Once registration is complete and your documentation is verified you will be provided with login access to the Chillr Business portal. You will be provided with an API key and will be able to generate the API access token.
 
+The Merchant also needs to provide a re-direct URL to which the page should re-direct once a transaction is completed.
+
 ## Implementation
 
 The API implementation has two parts:
@@ -17,6 +19,10 @@ The API implementation has two parts:
 
 The server sends a request to the Chillr API with details of the transaction to be performed. This includes the amount, product details and API credentials.
 
-The server will get as the response 
+The server will get a _qr\_code_ and an _alpha\_code_ in the response. The client side Javascript Chillr SDK is to be initialized with these parameters. The display of the QR code and the alpha code is taken care by the widget. It also updates progress of the transaction automatically and shows the user with instructions as and when necessary. 
+
+Once the user completes the transaction, status is updated on the Javascript widget. After a few seconds the widget will send a HTTP POST request to the redirect URL provided by the merchant. This request will have a JSON payload with the status and the details of the transaction in encrypted format. These details can be decrypted using the API secret key.
+
+Details on the encryption scheme used is available here.
 
 
