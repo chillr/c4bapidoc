@@ -46,9 +46,4 @@ The merchant has to call the following method in order to initiate the widget. T
 window.chillrOnlineSDK.chillrTransactionCreated(transaction_id, transaction_code, id, amount, expiry_time, created_at);
 ```
 
-We also provide an interface to lock the pay with chillr button which has to be necessarily implemented by the merchant.
-
-```javascript
-window.chillrOnlineSDK.chillrButtonEnabled
-```
 
