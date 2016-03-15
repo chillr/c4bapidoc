@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Server Side API Reference](end_points.md)
-* Registration
+* [Registration](registration.md)
 
