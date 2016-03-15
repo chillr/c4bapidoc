@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* End Points
+* [End Points](end_points.md)
 
