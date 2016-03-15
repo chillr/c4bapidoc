@@ -31,8 +31,8 @@ This API is used to initiate a transaction through Chillr.
 | 3 | data | Contains the transaction details as explained below |
 | &#149; | status | Status of the transaction |
 | &#149; | amount | Transaction Amount |
-| &#149; | transaction\_id | QR Code String for the transaction |
-| &#149; | transaction\_code | 4 character code for the transaction |
+| &#149; | qr\_code | QR Code String for the transaction |
+| &#149; | alpha\_code | 4 character code for the transaction |
 | &#149; | expiry_time | At what time the transaction will expire |
 | &#149; | id | Unique ID of the transaction. (This id needs to be passed for the transaction status query API) |
 | &#149; | created_at | Timestamp |
