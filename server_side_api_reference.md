@@ -19,6 +19,9 @@ This API is used to initiate a transaction through Chillr.
 | invoice\_id (string) | Invoice ID | _Null_
 | order\_id _(string)_ | Internal tracking ID for merchant | _Mandatory Field_ |
 | remarks _(string)_ | Remarks | _Null_ |
+| customer_email (string) | Customer email | _Null_ |
+| customer_phone_no (string) | Customer phone number| _Null_ |
+| customer_name (string) | Customer name | _Null_ | 
 | extra\_param\_1 _(string)_ | For use by merchant if needed | _Null_ |
 | extra\_param\_2 _(string)_ | For use by merchant if needed | _Null_ |
 
