@@ -51,7 +51,7 @@ This API is used to initiate a transaction through Chillr.
      "amount": 50,
      "description": "transaction initiated",
      "qr_code": "CHILLR:QRPAY:569f7a586368694380080000",
-     "transaction_code": "QOCT",
+     "alpha_code": "QOCT",
      "expiry_time": "2016/01/20 17:50:20",
      "id": "569f7a586368694380080000",
      "created_at": "2016/01/20 17:45:20"
