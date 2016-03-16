@@ -70,7 +70,7 @@ If there is a failure; then there is a status code returned in the response alon
 | 51 | Amount parameter is missing or is beyond limits. |
 | 59 | API Secret Key is missing. |
 | 58 | API Secret Key is not matching assigned key. |
-| 57 | API unaccceptable parameters |
+| 57 | API unacceptable parameters |
 | 53 | Merchant is not approved to use the API yet. |
 | 54 | Merchant not found or invalid. |
 
