@@ -138,6 +138,9 @@ _After Decryption of 'data' parameter_
   "order_id":"d24gfg1354",
   "transaction_id":"56af47b663686948462a0000",
   "invoice_id":"INV#1",
+  "customer_email":"sachin.jose@example.com",
+  "customer_phone_no": "+919837836736",
+  "customer_name": "Sachin",
   "extra_param_1":"John",
   "extra_param_2":"8089123456",
   "remarks":"Chillr transaction"
@@ -154,8 +157,6 @@ If there is a failure; then there is a status code returned in the response alon
 | 50 | API Key is missing or invalid. |
 | 60 | ID parameter is missing. |
 | 61 | This transaction is not owned by the requesting merchant.|
-| 59 | API Secret Key is missing. |
-| 58 | API Secret Key is not matching assigned key. |
 | 53 | Merchant is not approved to use the API yet. |
 | 54 | Merchant not found or invalid. |
 
