@@ -50,7 +50,7 @@ This API is used to initiate a transaction through Chillr.
      "status": "initiated",
      "amount": 50,
      "description": "transaction initiated",
-     "transaction_id": "CHILLR:QRPAY:569f7a586368694380080000",
+     "qr_code": "CHILLR:QRPAY:569f7a586368694380080000",
      "transaction_code": "QOCT",
      "expiry_time": "2016/01/20 17:50:20",
      "id": "569f7a586368694380080000",
@@ -70,6 +70,7 @@ If there is a failure; then there is a status code returned in the response alon
 | 51 | Amount parameter is missing or is beyond limits. |
 | 59 | API Secret Key is missing. |
 | 58 | API Secret Key is not matching assigned key. |
+| 57 | API unaccceptable parameters |
 | 53 | Merchant is not approved to use the API yet. |
 | 54 | Merchant not found or invalid. |
 
