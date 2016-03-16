@@ -113,6 +113,9 @@ The response has 2 fields - _status_ and _data_ as a JSON. The _data_ is a Base6
 | invoice\_id | Invoice id passed in the request|
 | order\_id | Order id passed in the request |
 | remarks | Remarks as passed in the request |
+| customer_email | Customer email |
+| customer_phone_no | Customer phone number |
+| customer_name | Customer name | 
 | extra\_param\_1 | Extra parameter passed in the request |
 | extra\_param\_2 | Extra parameter passed in the request |
 | transaction_id | The Chillr transaction ID |
