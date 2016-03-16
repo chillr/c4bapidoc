@@ -12,7 +12,7 @@ This document explains the steps to implement the client side Chillr SDK widget 
     s.async = true;
     var theUrl = "https://onlineapi.chillr.in//online-sdk/assets/js/init.min.js";
     s.src = theUrl;
-    var embedder = document.getElementById("chillr-sdk-embedder-5b8cf3a4-b0f0-13e9-3737-d5a159268ae6");
+    var embedder = document.getElementById("chillr-sdk-embedder");
     embedder.parentNode.insertBefore(s, embedder);
   }
   if (window.attachEvent){
