@@ -40,7 +40,7 @@ This API is used to initiate a transaction through Chillr.
 | &#149; | id | Unique ID of the transaction. (This id needs to be passed for the transaction status query API) |
 | &#149; | created_at | Timestamp |
 
-##### Response Fields and their descriptions
+##### Response Fields and their Descriptions
 
 1. **status** - Status of the API response 
 2. **message** - Human readable description of the response 
