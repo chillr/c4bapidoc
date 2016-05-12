@@ -39,3 +39,18 @@ $key = "00e9d200dfdc119a0e78f0dcef1da4f8";
 
 $response = openssl_decrypt( $data, $method, $key );
 ```
+##### 2. Node
+```javascript
+function decryptPayload(payload) {
+   var iv = new Buffer(16); // 16 byte buffer with default iv for AES-128-CBC in Ruby
+   iv.fill(0);
+   var decodeKey = new Buffer(16)  // Converting merchant_api_key to 16 byte long. 
+   decodeKey.fill(merchant_api_key)
+   var result,
+     encoded   = new Buffer(payload, 'base64'),
+     decipher  = crypto.createDecipheriv('aes-128-cbc', decodeKey, iv);
+   result = decipher.update(encoded);
+   result += decipher.final();
+   return result;
+ }
+```
