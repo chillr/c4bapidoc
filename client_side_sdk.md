@@ -43,7 +43,14 @@ This document explains the steps to implement the client side Chillr SDK widget 
 The merchant has to call the following method in order to initiate the widget. The values of the parameters _qr\_code_, _alpha_code_,_id_, _amount_, _expiry\_time_ and _created\_at_ are available from the response of [the server side API call](server_side_api_reference.md).
 
 ```javascript
-window.chillrOnlineSDK.chillrTransactionCreated(qr_code, transaction_code, id, amount, expiry_time, created_at);
+window.chillrOnlineSDK.chillrTransactionCreated(
+    qr_code, 
+    transaction_code, 
+    id, 
+    amount, 
+    expiry_time, 
+    created_at,
+    { retry: true});  // last parameter is optional.
 ```
 
 
