@@ -34,7 +34,7 @@ This API is used to initiate a transaction through Chillr.
    * *status* - Status of the transaction 
    * *amount* - Transaction Amount 
    * *qr\_code* - QR Code String for the transaction 
-   * *alpha\_code* - 4 character code for the transaction 
+   * *transaction\_code* - 4 character code for the transaction 
    * *expiry_time* - At what time the transaction will expire 
    * *id* - Unique ID of the transaction. (This id needs to be passed for the transaction status query API) 
    * *created_at* - Timestamp 
@@ -49,7 +49,7 @@ This API is used to initiate a transaction through Chillr.
      "amount": 50,
      "description": "transaction initiated",
      "qr_code": "CHILLR:QRPAY:569f7a586368694380080000",
-     "alpha_code": "QOCT",
+     "transaction_code": "QOCT",
      "expiry_time": "2016/01/20 17:50:20",
      "id": "569f7a586368694380080000",
      "created_at": "2016/01/20 17:45:20"
