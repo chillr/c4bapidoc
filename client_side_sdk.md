@@ -5,6 +5,7 @@ This document explains the steps to implement the client side Chillr SDK widget 
 ## 1.Include the Javascript snippet
 
 ```javascript
+<script type="text/javascript" id="chillr-sdk-embedder">
 (function(global) {
   function async_load(){
     var s = document.createElement("script");
@@ -22,6 +23,7 @@ This document explains the steps to implement the client side Chillr SDK widget 
     window.addEventListener("load", async_load, false);
   }
 })(this);
+</script>
 ```
 
 ## 2. Include the button & wrapper elements
