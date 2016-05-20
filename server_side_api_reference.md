@@ -4,6 +4,7 @@
 Chillr provides APIs to initiate,check and refund transactions. There are mainly 3 APIs which are listed below:-
 * [Initiate Transaction](initiate_transaction.md)
 * [Transaction Status Query](transaction_status_query.md)
+* [Refund](refund.md)
 
 
 
