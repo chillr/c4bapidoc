@@ -1,6 +1,6 @@
-# API Reference
 
-### 1. Initiate Transaction
+
+# Initiate Transaction
 
 This API is used to initiate a transaction through Chillr.
 
