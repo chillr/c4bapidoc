@@ -81,7 +81,7 @@ If there is a failure; then there is a status code returned in the response alon
 }
 ```
 
-### 2. Transaction Status Query
+# Transaction Status Query
 
 This API query gets the status of a created transaction.
 
