@@ -1,7 +1,7 @@
 # Refund
 This API is used to initiate a transaction refund. This can be done manually by the merchant from the web interface.
 
-| Path | https://onlineapi.chillr.in/api/v5/transactions/initialize-refund |
+| Path | https://onlineapi.chillr.in/api/v5/transactions/initiate_refund |
 | -- | -- |
 | Method | POST |
 
