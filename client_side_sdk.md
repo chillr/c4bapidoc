@@ -54,7 +54,7 @@ window.chillrOnlineSDK.chillrTransactionCreated(
     amount, 
     expiry_time, 
     created_at,
-    { retry: true});  // last parameter is optional.
+    { retry_button: true});  // last parameter is optional.
 ```
 
 
