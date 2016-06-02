@@ -36,5 +36,31 @@ Sample request structure
 }
 ```
 
+Sample success response
 
+```ruby
+{
+    "status": "success",
+    "message": "Collect batch creation accepted",
+    "data": {
+        "batch_id": "57453c1b636869174b000000"
+    }
+}
+```
 
+**batch_id** is the id of the created mass collect batch
+
+### Failure codes
+
+| Status code | Description |
+| -- | -- |
+| 50 | api_key param is missing |
+| 51 | api_secret_key param is missing |
+| 52 | name param is missing |
+| 53 | expiry_date param is missing |
+| 54 | customer param is missing |
+| 55 | expiry_date format errro (dd-mm-yyyy) |
+| 56 | api_secret_key mismatch error |
+| 57 | Merchant not found error |
+| 58 | error due invalid parameters |
+| 59 | Internal server error |
