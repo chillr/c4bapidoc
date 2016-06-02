@@ -20,3 +20,21 @@ Parameters:
 | name | Name of the batch | Yes |
 | expiry_date | Expiry date for the batch (dd-mm-yyyy) | Yes |
 | customers | Array of customer details | Yes |
+
+Sample request structure
+
+```ruby
+{
+	api_key: "5695d71a6368690df2030000",
+	api_secret_key: "f333884a36ccfc54787e6d96eac5e3d3",
+	name: "Electricity bill",
+	expiry_date:  "27-05-2016",
+	customers: [
+      { msisdn: "9447741462", amount: "200" }, 
+      { msisdn: "9633789451", amount: "600" }
+    ]
+}
+```
+
+
+
