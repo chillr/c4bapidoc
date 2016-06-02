@@ -64,6 +64,8 @@ Sample success response
 | 57 | Merchant not found error |
 | 58 | error due invalid parameters |
 | 59 | Internal server error |
+| 60 | batch_id param is missing |
+| 61 | Batch not found |
 
 Sample failure response
 
