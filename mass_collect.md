@@ -103,3 +103,35 @@ Sample request structure
 }
 ```
 
+Sample success response
+
+```json
+{
+    "status": "success",
+    "data": {
+        "batch_id": "5743fcb263686923fc0d0000",
+        "batch_status": "expired",
+        "customers": [
+            {
+                "msisdn": "9447741462",
+                "payment_status": "expired",
+                "transaction_id": "614410700416"
+            },
+            {
+                "msisdn": "9633789451",
+                "message": "Transaction not generated"
+            }
+        ]
+    }
+}
+```
+
+Sample failure response
+
+```json
+{
+    "status": "failure",
+    "status_code": 62,
+    "message": "Batch not found error"
+}
+```
