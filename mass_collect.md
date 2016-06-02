@@ -31,8 +31,8 @@ Sample request structure
 	"name" : "Electricity bill",
 	"expiry_date" :  "27-05-2016",
 	"customers" : [
-      { "msisdn" : "9447741462", amount: "200" }, 
-      { "msisdn" : "9633789451", amount: "600" }
+      { "msisdn" : "9447741462", "amount" : "200" }, 
+      { "msisdn" : "9633789451", "amount" : "600" }
     ]
 }
 ```
