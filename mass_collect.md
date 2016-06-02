@@ -23,7 +23,7 @@ Parameters:
 
 Sample request structure
 
-```ruby
+```json
 {
 	"api_key" : "5695d71a6368690df2030000",
 	"api_secret_key" : "f333884a36ccfc54787e6d96eac5e3d3",
@@ -38,7 +38,7 @@ Sample request structure
 
 Sample success response
 
-```ruby
+```json
 {
     "status": "success",
     "message": "Collect batch creation accepted",
@@ -67,7 +67,7 @@ Sample success response
 
 Sample failure response
 
-```ruby
+```json
 {
     "status": "failure",
     "status_code": 58,
@@ -92,4 +92,14 @@ METHOD: **POST**
 | api_key | Your API key | Yes |
 | api_secret_key | Your API secret key  | Yes |
 | batch_id | Id of batch | Yes |
+
+Sample request structure
+
+```json
+{
+	"api_key" : "5695d71a6368690df2030000",
+	"api_secret_key" : "f333884a36ccfc54787e6d96eac5e3d3",
+	"batch_id" : "5743fcb263686923fc0d0000"
+}
+```
 
