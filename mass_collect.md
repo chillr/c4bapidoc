@@ -79,3 +79,17 @@ Sample failure response
     }
 }
 ```
+
+
+## Status check API
+This  api is used to check the status of a collect batch.
+
+URL: **https://onlineapi.chillr.in/api/v5/check_collect_status**
+METHOD: **POST**
+
+| Field | Description | Mandatory |
+| -- | -- | -- |
+| api_key | Your API key | Yes |
+| api_secret_key | Your API secret key  | Yes |
+| batch_id | Id of batch | Yes |
+
