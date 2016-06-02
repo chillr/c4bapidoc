@@ -45,7 +45,8 @@ Sample success response
     "status_code" : 0,
     "message": "Collect batch creation accepted",
     "data": {
-        "batch_id": "57453c1b636869174b000000"
+        "batch_id": "57453c1b636869174b000000",
+        "non_chillr_customers" : ["9633789451"]
     }
 }
 ```
