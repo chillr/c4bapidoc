@@ -10,3 +10,13 @@ There are two api's for mass collect.
 
 URL: **https://onlineapi.chillr.in/api/v5/collect**
 METHOD: **POST**
+
+Parameters:
+
+| Field | Description | Mandatory |
+| -- | -- | -- |
+| api_key | Your API key | Yes |
+| api_secret_key | Your API secret key | Yes |
+| name | Name of the batch | Yes |
+| expiry_date | Expiry date for the batch (dd-mm-yyyy) | Yes |
+| customers | Array of customer details | Yes |
