@@ -25,13 +25,13 @@ Sample request structure
 
 ```ruby
 {
-	api_key: "5695d71a6368690df2030000",
-	api_secret_key: "f333884a36ccfc54787e6d96eac5e3d3",
-	name: "Electricity bill",
-	expiry_date:  "27-05-2016",
-	customers: [
-      { msisdn: "9447741462", amount: "200" }, 
-      { msisdn: "9633789451", amount: "600" }
+	"api_key" : "5695d71a6368690df2030000",
+	"api_secret_key" : "f333884a36ccfc54787e6d96eac5e3d3",
+	"name" : "Electricity bill",
+	"expiry_date" :  "27-05-2016",
+	"customers" : [
+      { "msisdn" : "9447741462", amount: "200" }, 
+      { "msisdn" : "9633789451", amount: "600" }
     ]
 }
 ```
@@ -64,3 +64,18 @@ Sample success response
 | 57 | Merchant not found error |
 | 58 | error due invalid parameters |
 | 59 | Internal server error |
+
+Sample failure response
+
+```ruby
+{
+    "status": "failure",
+    "status_code": 58,
+    "message": "Failed to initiate mass collect",
+    "data": {
+        "reason": [
+            "customer 2 : mobile number is not present"
+        ]
+    }
+}
+```
