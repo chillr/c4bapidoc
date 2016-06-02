@@ -9,6 +9,7 @@ There are two api's for mass collect.
 ## Create batch
 
 URL: **https://onlineapi.chillr.in/api/v5/collect**
+
 METHOD: **POST**
 
 Parameters:
@@ -71,6 +72,7 @@ Sample failure response
 This  api is used to check the status of a collect batch.
 
 URL: **https://onlineapi.chillr.in/api/v5/check_collect_status**
+
 METHOD: **POST**
 
 | Field | Description | Mandatory |
