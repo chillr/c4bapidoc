@@ -41,6 +41,7 @@ Sample success response
 ```json
 {
     "status": "success",
+    "status_code" : 0,
     "message": "Collect batch creation accepted",
     "data": {
         "batch_id": "57453c1b636869174b000000"
@@ -93,6 +94,7 @@ Sample success response
 ```json
 {
     "status": "success",
+    "status_code" : 0, 
     "data": {
         "batch_id": "5743fcb263686923fc0d0000",
         "batch_status": "expired",
