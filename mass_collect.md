@@ -75,6 +75,8 @@ URL: **https://onlineapi.chillr.in/api/v5/check_collect_status**
 
 METHOD: **POST**
 
+Parameters:
+
 | Field | Description | Mandatory |
 | -- | -- | -- |
 | api_key | Your API key | Yes |
