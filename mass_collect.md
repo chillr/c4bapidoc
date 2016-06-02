@@ -41,13 +41,13 @@ Sample success response
 
 ```json
 {
-    "status": "success",
-    "status_code" : 0,
-    "message": "Collect batch creation accepted",
-    "data": {
-        "batch_id": "57453c1b636869174b000000",
-        "non_chillr_customers" : ["9633789451"]
-    }
+  "status": "success",
+  "status_code" : 0,
+  "message": "Collect batch creation accepted",
+  "data": {
+      "batch_id": "57453c1b636869174b000000",
+      "non_chillr_customers" : ["9633789451"]
+  }
 }
 ```
 
@@ -59,11 +59,22 @@ Sample failure response
 {
     "status": "failure",
     "status_code": 58,
-    "message": "Failed to initiate mass collect",
+    "message": "Failed to create batch",
     "data": {
         "reason": [
             "customer 2 : mobile number is not present"
         ]
+    }
+}
+```
+
+```json
+{
+    "status": "failure",
+    "status_code": 58,
+    "message": "Failed to create batch",
+    "data": {
+        "reason": ["None of the customers are Chillr users."]
     }
 }
 ```
