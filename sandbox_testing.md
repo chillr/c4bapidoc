@@ -14,6 +14,11 @@ For [initiate transaction](initiate_transaction.md) you will have to use the san
 
 URL: **https://sandbox-onlineapi.chillr.in/api/v5/transactions/new**
 
+## Transaction Status Query
+For transaction status query you will have to use the sandbox endpoint.
+
+URL: ****
+
 ## Refund 
 For [refund](refund.md) you will have to use the sandbox endpoint
 
