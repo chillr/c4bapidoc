@@ -13,6 +13,7 @@ This API query gets the status of a created transaction.
 | **api_key** | The API key of the merchant | _Mandatory Field_ |
 | **id** | The id of the transaction created | _Mandatory Field_ |
 
+**NB** For [sandbox](sandbox_testing.md) testing use the sandbox endpoint.
 
 ##### Response Format
 The response has 2 fields - _status_ and _data_ as a JSON. The _data_ is a Base64 encrypted JSON block which needs to be decrypted in order to reveal the actual status response. Please see [Encryption Schemes](encryption_schemes.md) for details on how to decrypt.
