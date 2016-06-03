@@ -13,6 +13,8 @@ Request params
 | api_secret_key | Your api secret key | Yes |
 | transaction_id | Transaction id | Yes |
 
+**NB** For [sandbox](sandbox_testing.md) testing use the sandbox endpoint.
+
 Sample success response
 
 ```json
