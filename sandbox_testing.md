@@ -19,4 +19,4 @@ For [refund](refund.md) you will have to use the sandbox endpoint
 
 URL: **https://sandbox-onlineapi.chillr.in/api/v5/transactions/initiate_refund**
 
-You will have to install the sandbox build from here to do the testing in sandbox mode.
+You will have to install the sandbox build to do the testing in sandbox  mode.
