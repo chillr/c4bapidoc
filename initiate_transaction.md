@@ -25,6 +25,9 @@ This API is used to initiate a transaction through Chillr.
 | extra\_param\_1 _(string)_ | For use by merchant if needed | _Null_ |
 | extra\_param\_2 _(string)_ | For use by merchant if needed | _Null_ |
 
+**NB**
+
+Use [sandbox](sandbox_testing.md) url and sandbox credentials while you are doing development.
 
 ##### Response Fields and their Descriptions
 
