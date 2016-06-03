@@ -9,5 +9,6 @@
        * [Refund](refund.md)
    * [Client Side SDK](client_side_sdk.md)
    * [Encryption Schemes](encryption_schemes.md)
+* [Sandbox mode](sandbox_testing.md)
 * [Mass collect](mass_collect.md)
 
