@@ -17,7 +17,7 @@ URL: **https://sandbox-onlineapi.chillr.in/api/v5/transactions/new**
 ## Transaction Status Query
 For transaction status query you will have to use the sandbox endpoint.
 
-URL: ****
+URL: **https://sandbox-onlineapi.chillr.in/api/v5/transactions/details**
 
 ## Refund 
 For [refund](refund.md) you will have to use the sandbox endpoint
