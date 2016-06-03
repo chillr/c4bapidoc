@@ -8,4 +8,8 @@ You can follow the same documentation for sandbox mode except that the chillr wr
 <div id="chillr-element-wrapper" data-base-url="https://sandbox-onlineapi.chillr.in"></div>
 ```
 
+Also to initiate the transaction you will have to use the sandbox endpoint.
+
+URL: **https://sandbox-onlineapi.chillr.in/api/v5/transactions/new**
+
 You will have to install the sandbox build from here to do the testing in sandbox mode.
