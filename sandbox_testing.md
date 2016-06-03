@@ -1,6 +1,6 @@
 ## Testing in Sandbox mode
 
-Chillr for business API has a sandbox mode for testing the payments while  development. For this you need to get the sandbox credentials, ie **api_key** and **api_secret_key** (You can get it from the merchant [portal](https://sandbox-merchants.chillr.in/merchant_sessions/new once your account setup is complete). You will also need a sandbox Chillr app.
+Chillr for business API has a sandbox mode for testing the payments while  development. For this you need to get the sandbox credentials, ie **api_key** and **api_secret_key** (You can get it from the merchant [portal](https://sandbox-merchants.chillr.in/merchant_sessions/new) once your account setup is complete). You will also need a sandbox Chillr app.
 
 ## Client Side SDK
 You can follow the same documentation for sandbox mode for setting up the [Client Side SDK](client_side_sdk.md) except that the chillr wrapper element should be defined as below.
