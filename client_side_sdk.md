@@ -34,6 +34,8 @@ This document explains the steps to implement the client side Chillr SDK widget 
 <div id="chillr-element-wrapper"></div>
 ```
 
+If you are doing testing in sandbox mode change the wrapper element as in [this](sandbox_mode.md) section
+
 | Element | Description |
 | ------- | ------------|
 | chillr-button| This is the element that the user clicks to initiate a payment.|
