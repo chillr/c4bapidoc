@@ -123,7 +123,8 @@ Sample success response
             {
                 "msisdn": "9633789451",
                 "message": "Transaction not generated"
-            }
+            },
+            "non_chillr_customers" : ["9633789451"]
         ]
     }
 }
