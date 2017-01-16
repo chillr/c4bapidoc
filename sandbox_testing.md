@@ -6,7 +6,7 @@ Chillr for business API has a sandbox mode for testing the payments while  devel
 You can follow the same documentation for sandbox mode for setting up the [Client Side SDK](client_side_sdk.md) except that the chillr wrapper element should be defined as below.
 
 ```html
-<div id="chillr-element-wrapper" data-base-url="https://sandbox-onlineapi.chillr.in"></div>
+<div id="chillr-element-wrapper" base-url="https://sandbox-onlineapi.chillr.in"></div>
 ```
 
 ## Initiate transaction
@@ -19,7 +19,7 @@ For transaction status query you will have to use the sandbox endpoint.
 
 URL: **https://sandbox-onlineapi.chillr.in/api/v5/transactions/details**
 
-## Refund 
+## Refund
 For [refund](refund.md) you will have to use the sandbox endpoint
 
 URL: **https://sandbox-onlineapi.chillr.in/api/v5/transactions/initiate_refund**
