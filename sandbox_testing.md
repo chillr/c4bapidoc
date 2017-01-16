@@ -8,6 +8,29 @@ You can follow the same documentation for sandbox mode for setting up the [Clien
 ```html
 <div id="chillr-element-wrapper" data-base-url="https://sandbox-onlineapi.chillr.in"></div>
 ```
+And client side sdk will be as follows.
+
+```javascript
+<script type="text/javascript" id="chillr-sdk-embedder" class="chillr-async-script-loader">
+  (function(global) {
+    function async_load(){
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      var theUrl = 'https://sandbox-onlineapi.chillr.in/online-sdk/assets/js/init.min.js';
+      s.src = theUrl;
+      var embedder = document.getElementById("chillr-sdk-embedder");
+      embedder.parentNode.insertBefore(s, embedder);
+    }
+    if (window.attachEvent){
+      window.attachEvent("onload", async_load);
+    }
+    else{
+      window.addEventListener("load", async_load, false);
+    }
+  })(this);
+</script>
+```
 
 ## Initiate transaction
 For [initiate transaction](initiate_transaction.md) you will have to use the sandbox endpoint.
