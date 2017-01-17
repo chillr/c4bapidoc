@@ -76,3 +76,6 @@ Example:
 </div>
 
 ```
+## 4. Handling the payment success and failure
+
+In case of success and failure, a POST request is sent with the Payload containing encrypted data,  which contains transaction details  to the **callback_url**, set in merchants login interface. This can then be decrypted and respective action can be taken. 
