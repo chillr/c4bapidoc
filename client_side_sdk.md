@@ -44,19 +44,35 @@ If you are doing testing in sandbox mode change the wrapper element as in [this]
 
 ## 3. Initialize the widget
 
-The merchant has to call the following method in order to initiate the widget. The values of the parameters _qr\_code_, _alpha_code_,_id_, _amount_, _expiry\_time_ and _created\_at_ are available from the response of [the server side API call](server_side_api_reference.md). 
+The merchant has to call the following method in order to initiate the widget. The values of the parameters _qr\_code_, _alpha_code_,_id_, _amount_, _expiry\_time_ and _created\_at_ are available from the response of [the server side API call](server_side_api_reference.md).
 
 The retry parameter is optional, if set to true then there will be a retry option in case the payment is a failure.
 
+The widget can be initialized using two approaches based on where it is displayed.
+
+### 1. Same page with **<a href="#" id="chillr-button">Pay using Chillr</a>**.
+
 ```javascript
 window.chillrOnlineSDK.chillrTransactionCreated(
-    qr_code, 
-    transaction_code, 
-    id, 
-    amount, 
-    expiry_time, 
+    qr_code,
+    transaction_code,
+    id,
+    amount,
+    expiry_time,
     created_at,
     { retry_button: true});  // last parameter is optional.
 ```
 
+### 2. On a different page
+You can initiate it by simply setting the following attributes on DOM element **<div id="chillr-element-wrapper"></div>**
 
+1. data-chillr-standalone-page="true"
+2. data-chillr-transaction-details= <transaction details stringified json>
+3. data-chillr-options=<JSON with options eg: retry button, callback method name">
+
+Example:
+```html
+<div id="chillr-element-wrapper" data-chillr-standalone-page="true" data-chillr-transaction-details='{"status":"success","message":"Transaction initiated","data":{"status":"initiated","amount":1,"description":null,"transaction_id":"CHILLR:QRPAY:587da0456368694dd2d30200","qr_code":"CHILLR:QRPAY:587da0456368694dd2d30200","transaction_code":"ESPQ","expiry_time":4,"id":"587da0456368694dd2d30200","created_at":"2017/01/17 10:10:37"}}' data-chillr-options='{retry_button: true}'>
+</div>
+
+```
